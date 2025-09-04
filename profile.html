@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Fictionalized Thoughts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Fictionalized Thoughts</h1>
+            <div class="user-actions">
+                <a href="#" class="login-btn hidden">Login</a>
+                <a href="/create-story.html" class="start-story-btn hidden">Start a Story</a>
+                <a href="#" class="logout-btn hidden">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2 id="profile-header">My Published Stories</h2>
+            <div id="my-stories-container" class="prompts-grid">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 The Thought Archive</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="profile-script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictionalized Thoughts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Fictionalized Thoughts</h1>
+            <p class="tagline">Explore and Share Amazing Ideas: Where Facts and Real-Life Experiences Turn Into Amazing Fiction Stories</p>
+            <div class="user-actions">
+                <a href="#" class="login-btn">Login</a>
+                <a href="/create-story.html" class="start-story-btn hidden">Start a Story</a>
+                <a href="/profile.html" class="profile-btn hidden">My Profile</a>
+                <a href="#" class="logout-btn hidden">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>Featured Prompts</h2>
+            <div id="prompts-container" class="prompts-grid">
+            </div>
+            <button id="get-inspired-btn">Get Inspired</button>
+        </section>
+
+        <hr>
+
+        <section class="section">
+            <h2>Trending Thoughts</h2>
+            <div id="trending-container" class="trending-grid">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="section">
+            <h2>Browse by Genre</h2>
+            <div class="genre-grid">
+                <a href="/genre/historical-fiction" class="genre-card">
+                    <img src="https://via.placeholder.com/100" alt="Historical Fiction icon">
+                    <p>Historical Fiction</p>
+                </a>
+                <a href="/genre/hard-sci-fi" class="genre-card">
+                    <img src="https://via.placeholder.com/100" alt="Hard Sci-Fi icon">
+                    <p>Hard Sci-Fi</p>
+                </a>
+                <a href="/genre/alternate-history" class="genre-card">
+                    <img src="https://via.placeholder.com/100" alt="Alternate History icon">
+                    <p>Alternate History</p>
+                </a>
+                <a href="/genre/crime-mystery" class="genre-card">
+                    <img src="https://via.placeholder.com/100" alt="Crime & Mystery icon">
+                    <p>Crime & Mystery</p>
+                </a>
+                <a href="/genre/speculative-fiction" class="genre-card">
+                    <img src="https://via.placeholder.com/100" alt="Speculative Fiction icon">
+                    <p>Speculative Fiction</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="auth-form-container">
+                <h3>Login or Sign Up</h3>
+                <form id="auth-form">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit" id="auth-submit-btn">Login</button>
+                </form>
+                <p>
+                    Don't have an account? <a href="#" id="toggle-signup">Sign Up</a>
+                </p>
+                <p id="auth-message"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 The Thought Archive</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

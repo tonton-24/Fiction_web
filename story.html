@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="story-title">Loading Story...</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="story-view.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Fictionalized Thoughts</h1>
+            <div class="user-actions">
+                <a href="/" class="login-btn">Login</a>
+                <a href="/create-story.html" class="start-story-btn hidden">Start a Story</a>
+                <a href="/profile.html" class="profile-btn hidden">My Profile</a>
+                <a href="#" class="logout-btn hidden">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="story-container">
+            <a href="/" class="back-btn">&larr; Back to all stories</a>
+            <article id="story-content">
+                <h2 id="story-heading"></h2>
+                <div class="story-meta">
+                    <p>By <span id="author-name"></span></p>
+                    <p><span id="published-date"></span></p>
+                </div>
+                <div id="story-text"></div>
+            </article>
+            <div id="error-message" class="hidden">Story not found.</div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 The Thought Archive</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="story-view.js"></script>
+
+</body>
+</html>
